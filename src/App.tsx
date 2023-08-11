@@ -78,6 +78,8 @@ function App() {
                                         }
                                       }}
                                       autoFocus={item.title ? false : true}
+                                      maxLength={30}
+                                      className="w-full"
                                     />
                                     {!!item.title && (
                                       <button
@@ -174,6 +176,7 @@ function App() {
                                                                 ? false
                                                                 : true
                                                             }
+                                                            maxLength={30}
                                                           />
                                                           <Field
                                                             name={`data.${index}.card.${cardIndex}.description`}
